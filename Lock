@@ -5,7 +5,7 @@ getgenv().Enabled = true
 -- fov settings
 getgenv().ShowFOV = true
 getgenv().Filled = false
-getgenv().FOVSize = 150
+getgenv().FOVSize = 100
 getgenv().FOVTransparency = 1
 getgenv().FOVThickness = 2.0
 getgenv().FOVColor = Color3.new(0,0,0)
