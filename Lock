@@ -3,7 +3,7 @@ getgenv().Prediction = 0.1485436
 getgenv().Enabled = true
 
 -- fov settings
-getgenv().ShowFOV = true
+getgenv().ShowFOV = false
 getgenv().Filled = false
 getgenv().FOVSize = 100
 getgenv().FOVTransparency = 1
