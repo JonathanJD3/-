@@ -1,0 +1,326 @@
+local FootballGui = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local UI_2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local ForceKneel = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local ForcePumpFake = Instance.new("TextButton")
+local ForceBlock = Instance.new("TextButton")
+local ForceHitstick = Instance.new("TextButton")
+local ForcePowerBox = Instance.new("TextBox")
+local ForcePower = Instance.new("TextButton")
+local AffectEveryone = Instance.new("TextButton")
+local X = Instance.new("TextBox")
+local Y = Instance.new("TextBox")
+local Z = Instance.new("TextBox")
+local PosThrow = Instance.new("TextButton")
+
+--Properties:
+
+FootballGui.Name = "FootballGui"
+FootballGui.Parent = game.CoreGui
+FootballGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI.Name = "UI"
+UI.Parent = FootballGui
+UI.Active = true
+UI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UI.Position = UDim2.new(0.0999999866, 0, 0.100000001, 0)
+UI.Size = UDim2.new(0.174332172, 0, 0.0818030015, 0)
+UI.Draggable = true
+
+UI_2.Name = "UI"
+UI_2.Parent = UI
+UI_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+UI_2.Position = UDim2.new(-0.0266488995, 0, 0.5857144, 0)
+UI_2.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+UI_2.Font = Enum.Font.SourceSans
+UI_2.Text = "Enabled: false"
+UI_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+UI_2.TextScaled = true
+UI_2.TextSize = 14.000
+UI_2.TextWrapped = true
+
+TextLabel.Parent = UI
+TextLabel.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+TextLabel.Position = UDim2.new(-0.0266488995, 0, 0.285714298, 0)
+TextLabel.Size = UDim2.new(1.03997338, 0, 0.300000012, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Enable Auto Catch"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+ForceKneel.Name = "ForceKneel"
+ForceKneel.Parent = UI
+ForceKneel.BackgroundColor3 = Color3.fromRGB(0, 230, 255)
+ForceKneel.Position = UDim2.new(-0.0333111249, 0, 1.95306158, 0)
+ForceKneel.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+ForceKneel.Font = Enum.Font.SourceSans
+ForceKneel.Text = "Force Kneel"
+ForceKneel.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForceKneel.TextScaled = true
+ForceKneel.TextSize = 14.000
+ForceKneel.TextWrapped = true
+
+TextBox.Parent = UI
+TextBox.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+TextBox.Position = UDim2.new(-0.0266488492, 0, 1.28571439, 0)
+TextBox.Size = UDim2.new(1.03997326, 0, 0.673469067, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "0"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+ForcePumpFake.Name = "ForcePumpFake"
+ForcePumpFake.Parent = UI
+ForcePumpFake.BackgroundColor3 = Color3.fromRGB(0, 255, 64)
+ForcePumpFake.Position = UDim2.new(-0.0333111249, 0, 2.64693904, 0)
+ForcePumpFake.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+ForcePumpFake.Font = Enum.Font.SourceSans
+ForcePumpFake.Text = "Force Pump Fake"
+ForcePumpFake.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForcePumpFake.TextScaled = true
+ForcePumpFake.TextSize = 14.000
+ForcePumpFake.TextWrapped = true
+
+ForceBlock.Name = "ForceBlock"
+ForceBlock.Parent = UI
+ForceBlock.BackgroundColor3 = Color3.fromRGB(141, 0, 2)
+ForceBlock.Position = UDim2.new(-0.0333111249, 0, 3.34081674, 0)
+ForceBlock.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+ForceBlock.Font = Enum.Font.SourceSans
+ForceBlock.Text = "Force Block"
+ForceBlock.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForceBlock.TextScaled = true
+ForceBlock.TextSize = 14.000
+ForceBlock.TextWrapped = true
+
+ForceHitstick.Name = "ForceHitstick"
+ForceHitstick.Parent = UI
+ForceHitstick.BackgroundColor3 = Color3.fromRGB(141, 0, 117)
+ForceHitstick.Position = UDim2.new(-0.0266488977, 0, 4.72857189, 0)
+ForceHitstick.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+ForceHitstick.Font = Enum.Font.SourceSans
+ForceHitstick.Text = "Force Hitstick Loop: false"
+ForceHitstick.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForceHitstick.TextScaled = true
+ForceHitstick.TextSize = 14.000
+ForceHitstick.TextWrapped = true
+
+ForcePowerBox.Name = "ForcePowerBox"
+ForcePowerBox.Parent = UI
+ForcePowerBox.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+ForcePowerBox.Position = UDim2.new(-0.0266488492, 0, 5.40816402, 0)
+ForcePowerBox.Size = UDim2.new(1.03997326, 0, 0.673469067, 0)
+ForcePowerBox.Font = Enum.Font.SourceSans
+ForcePowerBox.Text = ""
+ForcePowerBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForcePowerBox.TextScaled = true
+ForcePowerBox.TextSize = 14.000
+ForcePowerBox.TextWrapped = true
+
+ForcePower.Name = "ForcePower"
+ForcePower.Parent = UI
+ForcePower.BackgroundColor3 = Color3.fromRGB(0, 74, 121)
+ForcePower.Position = UDim2.new(-0.0199866742, 0, 6.09591913, 0)
+ForcePower.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+ForcePower.Font = Enum.Font.SourceSans
+ForcePower.Text = "Force Ball Power"
+ForcePower.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForcePower.TextScaled = true
+ForcePower.TextSize = 14.000
+ForcePower.TextWrapped = true
+
+AffectEveryone.Name = "AffectEveryone"
+AffectEveryone.Parent = UI
+AffectEveryone.BackgroundColor3 = Color3.fromRGB(0, 255, 64)
+AffectEveryone.Position = UDim2.new(-0.0399733484, 0, 4.03469372, 0)
+AffectEveryone.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+AffectEveryone.Font = Enum.Font.SourceSans
+AffectEveryone.Text = "Affect Everyone: false"
+AffectEveryone.TextColor3 = Color3.fromRGB(0, 0, 0)
+AffectEveryone.TextScaled = true
+AffectEveryone.TextSize = 14.000
+AffectEveryone.TextWrapped = true
+
+X.Name = "X"
+X.Parent = UI
+X.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+X.Position = UDim2.new(-0.0266488492, 0, 6.77551079, 0)
+X.Size = UDim2.new(0.346490651, 0, 0.672999978, 0)
+X.Font = Enum.Font.SourceSans
+X.PlaceholderText = "X"
+X.Text = ""
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+Y.Name = "Y"
+Y.Parent = UI
+Y.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+Y.Position = UDim2.new(0.333821833, 0, 6.77551079, 0)
+Y.Size = UDim2.new(0.346490651, 0, 0.672999978, 0)
+Y.Font = Enum.Font.SourceSans
+Y.PlaceholderText = "Y"
+Y.Text = ""
+Y.TextColor3 = Color3.fromRGB(0, 0, 0)
+Y.TextScaled = true
+Y.TextSize = 14.000
+Y.TextWrapped = true
+
+Z.Name = "Z"
+Z.Parent = UI
+Z.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+Z.Position = UDim2.new(0.673496008, 0, 6.79591894, 0)
+Z.Size = UDim2.new(0.346490651, 0, 0.652591825, 0)
+Z.Font = Enum.Font.SourceSans
+Z.PlaceholderText = "Z"
+Z.Text = ""
+Z.TextColor3 = Color3.fromRGB(0, 0, 0)
+Z.TextScaled = true
+Z.TextSize = 14.000
+Z.TextWrapped = true
+
+PosThrow.Name = "PosThrow"
+PosThrow.Parent = UI
+PosThrow.BackgroundColor3 = Color3.fromRGB(0, 74, 121)
+PosThrow.Position = UDim2.new(-0.0333111249, 0, 7.44285774, 0)
+PosThrow.Size = UDim2.new(1.03997338, 0, 0.699999988, 0)
+PosThrow.Font = Enum.Font.SourceSans
+PosThrow.Text = "Position Throw"
+PosThrow.TextColor3 = Color3.fromRGB(0, 0, 0)
+PosThrow.TextScaled = true
+PosThrow.TextSize = 14.000
+PosThrow.TextWrapped = true
+
+AffectEveryone.MouseButton1Click:Connect(function()
+    if AffectEveryone.AutoButtonColor == true then
+        AffectEveryone.AutoButtonColor = false
+        AffectEveryone.BackgroundColor3 = Color3.fromRGB(0,255,0)
+        AffectEveryone.Text = "Affect Everyone: true"
+    else
+        AffectEveryone.AutoButtonColor = true
+        AffectEveryone.BackgroundColor3 = Color3.fromRGB(255,0,0)
+        AffectEveryone.Text = "Affect Everyone: false"
+    end
+end)
+
+ForceKneel.MouseButton1Click:Connect(function()
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+        if workspace:FindFirstChild(v.Name) ~= nil then
+            if AffectEveryone.AutoButtonColor == true then
+                if workspace:FindFirstChild(v.Name):FindFirstChild("Football") ~= nil then
+                    game:GetService("ReplicatedStorage").Events.Kneel:FireServer(v.Character)
+                end
+            else
+                game:GetService("ReplicatedStorage").Events.Kneel:FireServer(v.Character)
+            end
+        end
+    end
+end)
+
+ForcePumpFake.MouseButton1Click:Connect(function()
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+        if workspace:FindFirstChild(v.Name) ~= nil then
+            if AffectEveryone.AutoButtonColor == true then
+                if workspace:FindFirstChild(v.Name):FindFirstChild("Football") ~= nil then
+                    game:GetService("ReplicatedStorage").Events.PumpFake:FireServer(v.Character)
+                end
+            else
+                game:GetService("ReplicatedStorage").Events.PumpFake:FireServer(v.Character)
+            end
+        end
+    end
+end)
+
+ForceBlock.MouseButton1Click:Connect(function()
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+        if workspace:FindFirstChild(v.Name) ~= nil then
+            if AffectEveryone.AutoButtonColor == true then
+                if workspace:FindFirstChild(v.Name):FindFirstChild("Football") ~= nil then
+                    game:GetService("ReplicatedStorage").Events.Block:FireServer(v.Character)
+                end
+            else
+                game:GetService("ReplicatedStorage").Events.Block:FireServer(v.Character)
+            end
+        end
+    end
+end)
+
+ForceHitstick.MouseButton1Click:Connect(function()
+    if ForceHitstick.AutoButtonColor == true then
+        ForceHitstick.AutoButtonColor = false
+        ForceHitstick.BackgroundColor3 = Color3.fromRGB(0,255,0)
+        ForceHitstick.Text = "Force Hitstick Loop: true"
+    else
+        ForceHitstick.AutoButtonColor = true
+        ForceHitstick.BackgroundColor3 = Color3.fromRGB(255,0,0)
+        ForceHitstick.Text = "Force Hitstick Loop: false"
+    end
+    while ForceHitstick.AutoButtonColor == false do
+        wait()
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+            if workspace:FindFirstChild(v.Name) ~= nil then
+                if AffectEveryone.AutoButtonColor == true then
+                    if workspace:FindFirstChild(v.Name):FindFirstChild("Football") ~= nil then
+                        game:GetService("ReplicatedStorage").Events.Hitstick:FireServer(v.Character)
+                    end
+                else
+                    game:GetService("ReplicatedStorage").Events.Hitstick:FireServer(v.Character)
+                end
+            end
+        end
+        if ForceHitstick.AutoButtonColor == true then
+            break
+        end
+    end
+end)
+
+ForcePower.MouseButton1Click:Connect(function()
+    local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+    local char = game:GetService("Players").LocalPlayer.Character
+    ForcePower.Text = "3"
+    wait(1)
+    ForcePower.Text = "2"
+    wait(1)
+    ForcePower.Text = "1"
+    wait(1)
+    char.Football.Handle.RemoteEvent:FireServer("Clicked", char.Head.CFrame.Position, mouse.Hit.Position, tonumber(ForcePowerBox.Text))
+    ForcePower.Text = "Force Ball Power"
+end)
+
+UI_2.MouseButton1Click:Connect(function()
+    if UI_2.AutoButtonColor == true then
+        UI_2.AutoButtonColor = false
+        UI_2.BackgroundColor3 = Color3.fromRGB(0,255,0)
+        UI_2.Text = "Enabled: true"
+    else
+        UI_2.AutoButtonColor = true
+        UI_2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+        UI_2.Text = "Enabled: false"
+    end
+    while UI_2.AutoButtonColor == false do
+        wait()
+        if workspace:FindFirstChild("Football") ~= nil then
+            local Football = workspace:FindFirstChild("Football")
+            local Character = game:GetService("Players").LocalPlayer.Character
+            local Magnitude = (Football.Position - Character.HumanoidRootPart.Position).Magnitude
+            if Magnitude < tonumber(TextBox.Text) then
+                Football.Position = Character.HumanoidRootPart.Position
+            end
+        end
+        if UI_2.AutoButtonColor == true then
+            break
+        end
+    end
+end)
+
+PosThrow.MouseButton1Click:Connect(function()
+    local char = game:GetService("Players").LocalPlayer.Character
+    char.Football.Handle.RemoteEvent:FireServer("Clicked", Vector3.new(X.Text, Y.Text, Z.Text), Vector3.new(0,0,0), 0)
+end)
